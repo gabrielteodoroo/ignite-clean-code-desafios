@@ -13,10 +13,10 @@ function sumFirstFiveRatings(ratings) {
     let ratingsSum = 0;
 
     for (const rating of firstFiveRatings) {
-      ratingsSum += +rating
+      ratingsSum += Number(rating)
     }
 
-    return { ratingsSum, created_at: +new Date() }
+    return { ratingsSum, created_at: Number(new Date()) }
   }
 
   return { error: 'ratings is required' }
